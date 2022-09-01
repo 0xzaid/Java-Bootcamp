@@ -1,0 +1,23 @@
+Throwing Exceptions and static factory method
+from the ease of use and capability point of view.
+
+Pros of Throwing Exceptions
+    - Groups similar types of bugs together.
+    - Separates error handling code from regular code
+    - use of "throws" keyword, then specify exception
+    - Easier to use than static factory methods, dont have to create a new method
+
+
+Cons of Throwing Exceptions
+    - if not handled, program quits
+
+
+Pros of static factory method
+    - can have different name than constructors
+    - can be invoked without creating a new instance of class
+    - they reduce the verbosity of creating parameterized type instance
+
+Cons of static factory method
+    - classes without public or protected constructors cannot be subclassed
+    - harder to use than throwing exceptions, need to create a new method and then change everywhere
+      we that class is instantiated
